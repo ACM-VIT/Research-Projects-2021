@@ -1,0 +1,410 @@
+html,body {
+    height:100%;
+    margin:0;
+    line-height: 180%;
+    color: beige;
+    background-color: #1f1d1d;
+    width: auto;
+}
+
+#home_icon {
+    display: flex;
+}
+
+ion-icon {
+    color: beige;
+    font-size: 32px;
+    position: relative;
+    left: 1rem;
+    top: 1rem;
+}
+
+.img1 {
+    background: url( ../fractal_bg.jpg);     
+    background-position: -1rem -8rem;
+    min-height: 100%;
+}
+
+#navbar {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: montserrat; 
+    overflow: hidden;
+    position: fixed;
+    top:0;
+    z-index: 1;
+    border-bottom: 1px solid beige;
+    background: url(../fractal-flame.jpg);
+    background-position: 0rem 20rem;
+    height: 80px;
+    width: 100%;
+}
+
+.portfolio_link {
+    font-size: 1.2rem;
+    line-height: 60px;
+    font-weight: bold;
+    float: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin:0.7rem;
+    border:1px invisible;
+    border-radius:3px;
+    color: beige;
+    text-shadow: 2px 1px black;
+}
+
+
+.portfolio_link:hover{
+    transition: 0.5s;
+    text-shadow: 0px 0px;
+    background: lightcyan;
+    color: black;
+}
+
+#nav_ul {
+    float: right;
+}
+
+#nav_ul li {
+    display: inline-block;
+    line-height: 55px;
+    margin: 0;
+}
+
+#nav_ul li a {
+    color: beige;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+#nav_ul a:hover{
+    background: lightcyan;
+    color: black;
+    transition: 0.2s;
+}
+
+#checkbtn {
+    font-size: 30px;
+    color: beige;
+    float: right;
+    margin-right: 2rem;
+    margin-top:0.8rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+#check {
+    display: none;
+}
+
+#heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-size: 56%;
+    background-repeat: no-repeat;
+    background-position: 16.5rem 8rem;
+    text-shadow: 3px 3px #000000;
+                            
+    padding: 4rem;
+    padding-top: 0;
+    padding-bottom: 0;   
+}
+
+#main_heading {
+    color:beige;
+    font-family: 'Dancing Script', cursive;
+    font-size: 4.5em;
+    margin-bottom: 0;
+}
+
+#sub_heading {
+    color: beige;
+    font-style: italic;
+    font-size: 3rem;
+    font-family: 'Tangerine', cursive;
+}
+
+.img2 {
+    background: url( ../fractal-flame.jpg);
+    min-height: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+.content {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-family: 'Quicksand', sans-serif;
+    font-size:1.3rem;
+}
+
+.content_heading {
+    font-family: 'Tangerine', cursive;
+    font-size: 4rem;
+}
+
+#chooseOperationButton {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+#operation_select {
+    background-color:cadetblue;
+    border: none;
+    color: white;
+    height: 1.5rem;
+    width: 10rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+#clipboardCopy {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+    width: 5rem;
+}
+
+.img3 {
+    background: url( ../fractal-blue.jpg);
+    background-position: center;
+    min-height: 50%;
+}
+
+.img6 {
+    background: url( ../galaxy-infinity.jpg);
+    background-position: center;
+    min-height: 50%;
+
+}
+
+.img5 {
+    background: url( ../milky-way.jpg);
+    background-position: center bottom;
+    min-height: 50%;
+}
+
+.img4 {
+    background: url( ../physics.jpg);
+    background-position: center center;
+    min-height: 50%;
+}
+
+#function_selection {
+    position: relative;
+    display: inline-block;
+    margin-left: 5rem;
+    color: beige;
+}
+
+.dropdown {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+#function_selection:hover .dropdown-content {
+    display: block; 
+}
+
+#function_selection:hover .dropdown {
+    background-color: #3e8e41;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: #343434;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #343434;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 1px solid snow;  /* creates padding around scroll thumb */
+}
+
+table, th, td {
+    border: 1px solid #616060;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    text-align: left;
+    font-size: 1rem;
+}
+
+#usage_output {
+    background-color: #28282B;
+    height: 150px;
+    display: flex; 
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    overflow-y: scroll;
+
+    font-weight: bold;
+
+    border: 2px solid pink;
+    border-radius: 20px;
+    border-style: inset;
+}
+
+.img1, .img2, .img3, .img4, .img5, .img6 {
+    position: relative;
+    background-attachment: fixed;
+    background-repeat: no-repeat;    
+}
+
+form {
+    border-top:1px dotted #D9D9D9;
+}
+
+button {
+    width:246px;
+    height:40px;
+    color:#4C4C4C;
+    margin-bottom:20px;
+    margin-left:20px
+}
+
+input {
+    width:280px;
+    height:40px;
+    padding:5px;
+    margin:20px 0 10px;
+    border-radius:5px;
+    border:4px solid #acbfa5
+}
+
+input[type = submit] {
+    width:100px;
+    background-color:#4C4C4C;
+    border-radius:5px;
+    border:2px solid #616060;
+    color: beige;
+}
+
+.selectOperation {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formWrapper{
+    border:1px solid #D0D0D0;
+}
+
+.formWrapper form {
+    width:auto;
+}
+
+.formWrapper input {
+    width: auto;
+    
+}
+
+#enter-values-tag {
+    font-size: large;
+}
+
+#thanks a {
+    color: beige;
+}
+#thanks a:hover{
+    transition: 0.5s;
+    background: lightcyan;
+    color: black;
+}
+
+
+
+/* Responsive */
+/* If screen width is smaller, but not small enough for dropdown */
+@media ( max-width: 952px ) {
+    label#check {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    #nav_ul li a {
+        font-size: 16px;
+    }
+}
+
+@media ( max-width: 858px ) {
+    .content {
+        font-size: 2rem;
+    }
+
+    #checkbtn {
+        display: block;
+    }
+
+    #nav_ul {
+        position: fixed;
+        height: 18rem;
+        background: #2c3e50;
+        border: 1px solid beige;
+        padding-left: 0rem;
+
+        top: 60px;
+        left: -115%;
+        text-align: center;
+
+        transition: all 0.5s;
+
+    }
+
+    #nav_ul li {
+        display: block;
+        margin: 20px 0;
+        line-height: 30px;    
+    }
+
+    #nav_ul li a {
+        font-size: 20px;
+    }
+
+    #nav_ul a:hover {
+        background: none;
+        color: #0082e6;   
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    .img1 {
+        background: url( ../fractal_bg.jpg);
+        min-height: 100%;
+        background-position: -45rem;
+    }
+}

@@ -41,6 +41,7 @@ git merge
 #### [Network Security](https://github.com/ACM-VIT/Research-Projects-2021/tree/main/Network%20Security)
 #### [IOT](https://github.com/ACM-VIT/Research-Projects-2021/tree/main/IOT)
 #### [Advanced Projects](https://github.com/ACM-VIT/Research-Projects-2021/tree/main/Advance%20Projects)
+#### [Quantum Computing](https://github.com/ACM-VIT/Research-Projects-2021/tree/main/Quantum-Computing)
 
 ---
 
