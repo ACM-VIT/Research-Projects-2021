@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Stylesheet -->
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"> -->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/main.css') }}">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Custom Atom Favicon  -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+    <!-- Ion Icon -->
+    <script src="https://unpkg.com/ionicons@5.5.1/dist/ionicons.js"></script>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script> <!-- Home Button Icon -->
+
+    <title>Truly Random - A Quantum Project</title>
+
+    {% block head %}{% endblock %}
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <input type="checkbox" id="check">
+        
+        <label for="check">
+            <p id="checkbtn">
+            <ion-icon name="hardware-chip-outline"></ion-icon>
+            </p>
+        </label>
+        
+        <a href="https://github.com/Chasmiccoder"><label class="portfolio_link">The Kolhe Project</label></a>
+        <ul id="nav_ul">
+            
+            <li ><a href="#tp_about" class="navbar_element" id="tp_nav_about">About</a></li>
+            <li><a href="#tp_usage" class="navbar_element" id="tp_nav_usage">Usage</a></li>
+            <li><a href="#tp_applications" class="navbar_element" id="tp_nav_applications">Applications</a></li>
+            <li><a href="#tp_theory" class="navbar_element" id="tp_nav_theory">Theory</a></li>
+        </ul>
+    </nav>
+
+    <br><br>
+    <!-- Heading -->
+    <div class="img1" id="home">
+        <div id="heading">
+            <br><br><br><br>
+
+            <p id="main_heading">Truly Random</p>
+            <br>
+            <p id="sub_heading">Generate true random numbers using Quantum Phenomena</p>
+            
+        </div>
+    </div>
+
+    <div id="tp_about"></div>
+
+    <br>
+    <br>
+
+    <!-- About -->
+    <section>
+        <div id="about" class="content">
+            <p class="content_heading">About</p>
+            <p>
+                Our world is literally fuelled by random numbers. We use random numbers in Cryptography,
+                Blockchain, Statistics, Gaming, and Gambling. However, classical methods of producing random numbers aren't truly 'random' as such and they rely on ever changing seeds and algorithms that imitate randomness. With the advent of Quantum Computing, all this is going to change, as Quantum Phenomena are fundametally random. In this project we use IBM's qiskit library to simulate a mini Quantum Computer and generate numbers that bring us closer to the dream of generating True Random Numbers!
+            </p>
+
+        </div>
+
+    </section>
+
+    <br>
+    <div class="img2">
+    </div>
+
+    {% block body %}{% endblock %}
+
+    <br>
+    <div class="img3">
+    </div>
+
+    <div id="tp_applications"></div>
+
+    <br>
+    <br>
+
+    <section>
+        <div id="applications" class="content">
+            
+            <p class="content_heading">Application</p>
+
+            <p>
+                Authentication 
+                <br>
+                Encryption
+                <br>
+                Game Development
+                <br>
+                Simulation
+                <br>
+                Statistics
+                <br>
+                Blockchain
+                <br>
+
+            </p>
+
+        </div>
+    </section>
+
+    <div class="img4">
+    </div>
+
+    <div id="tp_theory"></div>
+    <br>
+    <br>
+
+    <section>
+        <div id="theory" class="content">
+            
+            <p class="content_heading">Theory</p>
+
+            <p>
+                Most random number generators actually generate pseudorandom numbers, which rely on specific classical algorithms. The best alternative is an RNG that depend on atmospheric noise or thermal effects. Cryptography uses Cryptographically secure pseudo RNGs that rely on keys with high entropy. 
+                This project demonstrates that we can generate true random numbers by running the python scripts on a fault tolerant Quantum Computer. 
+                <br>
+
+                We first initialize a quantum register and a classical register, both with a size of 1 bit. Then we load both registers into a single circuit. 
+                <br><br>
+                <img src="../static/Q_circuit.png" alt="Quantum Circuit">
+                <br><br>
+                
+                After that, we pass the quantum register as an argument to the Hadamard Gate. This gate takes a single qubit as its input and returns a number that is either 0 or 1, with equal probability. It does this by creating a superposition, which ultimately collapses to one of the two states.
+                Then we 'measure' the quantity in the quantum register and store that in the classical register. This entire procedure has been described as a 'Coin Toss'.
+
+                <br>
+                By repeating this coin toss over and over again, we can generate a string of binary digits, integers, floating point numbers and more!
+                
+            </p>
+
+        </div>
+    </section>
+
+    <!-- <div class="img5">
+    </div> -->
+
+    <div class="img6">
+    </div>
+    
+    <section>
+        <div id="thanks" class="content">
+            <p class="content_heading">Cheers!</p>
+
+            <p>
+                Thanks for going through my project. I greatly appreciate it!<br> 
+                Link to <a href="https://github.com/Chasmiccoder/Truly-Random">Source Code</a>
+            </p>
+
+            <br>
+
+            <p>
+                <h4>Conclusion</h4>
+                Quantum Computing itself is in its early stages, and this project fairly naive in its implementation. However, I learned a lot during the process including some of the basics of quantum circuits, web development, python backend integration (with Flask), and how JS can communicate with the python backend via ajax calls.
+            </p>
+
+        </div>
+    </section>
+
+      <br>
+  
+      <script src="{{url_for('static', filename='javascript/main.js')}}"></script>
+
+  </body>
+  </html>
